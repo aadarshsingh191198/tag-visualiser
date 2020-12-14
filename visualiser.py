@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template, make_response
 from markupsafe import Markup
-import pdfkit
+# import pdfkit
 import pandas as pd
 app = Flask(__name__,
             static_url_path='', 
