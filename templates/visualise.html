@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NER Tag Visualiser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div class="entities">
+        <div class="sno title">ID</div>
+        <div class="right title">Predictions</div>
+        <div class="left title">Labels</div>
+        <hr class="title-line">
+        <hr class="secondary-line">
+        {%for markup, markup_gold in markup|zip(markup_gold):%}
+            <div class="sno">{{loop.index}}</div>
+            <div class="right">
+                {{markup}}
+            </div>
+            <div class="left">
+                {{markup_gold}}
+            </div>
+            <hr/>
+        {%endfor %}
+    </div>
+
+</body>
+</html>

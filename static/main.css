@@ -1,0 +1,84 @@
+.entities {
+    line-height: 2; 
+}
+
+[data-entity] {
+    padding: 0.25em 0.35em;
+    margin: 0px 0.25em;
+    line-height: 1;
+    display: inline-block;
+    border-radius: 0.25em;
+    border: 1px solid; 
+}
+
+[data-entity]::after {
+    box-sizing: border-box;
+    content: attr(data-entity);
+    font-size: 0.6em;
+    line-height: 1;
+    padding: 0.35em;
+    border-radius: 0.35em;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 0px 0.1rem 0.5rem; 
+}
+
+[data-entity][data-entity="short"] {
+    background: rgba(166, 226, 45, 0.2);
+    border-color: rgb(166, 226, 45); 
+}
+
+[data-entity][data-entity="short"]::after {
+    background: rgb(166, 226, 45); 
+}
+
+[data-entity][data-entity="long"] {
+    background: rgba(224, 0, 132, 0.2);
+    border-color: rgb(224, 0, 132); 
+}
+
+[data-entity][data-entity="long"]::after {
+    background: rgb(224, 0, 132); 
+}
+
+body {
+   padding: 25px 50px;
+   font: 12px Helvetica, Arial, sans-serif;
+}
+
+.left{
+    float: left;
+    width:45%
+}
+
+.right{
+    float:right;
+    width:45%
+}
+
+hr{
+    clear:both;
+}
+
+.sno {
+    clear: left;
+    float: left;
+    text-align:center;
+    width: 8%;
+    font-weight: 800;
+}
+
+.title {
+    font-size: x-large;
+    text-align: center;
+    font-weight: normal;
+}
+
+hr.title-line {
+    margin: 1px;
+}
+
+hr.secondary-line {
+    margin-top: 1px;
+}
